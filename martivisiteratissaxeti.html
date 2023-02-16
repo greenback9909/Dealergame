@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<body>
+
+    <h1>მოგესალმებით ჩვენს საიტზე!</h1>
+    <p>რომ დაიწყოთ თამაში დააკლიკეთ ამ ღილაკს</p>
+
+    <script>
+        "use strict"
+        function intro() {
+            let accept = confirm("ამ თამასში შენ უნდა გაყიდო რაღაცა, ვნახოთ გამოგივა თუ არა")
+            if (accept == true) {
+
+            }
+            else if (accept == false) {
+                j2
+            }
+        }
+        function tutorial() {
+            confirm("ამ თამასში გექნება მხოლოდ 1 სიცოცხლე და ეცადე არ დაგიჭიროს ძაღლობამ! წარმატებები!")
+            let shesavali = prompt("სალამი ვახო, რამე ხომ არ გაქვს ხო აზე ხარ \n1. კი რა სორტი გინდა ძმა? \n2.ბიჭო რავი ველოდები \n3.არა რაზე მელაპარაკები?")
+            if (shesavali == null) {
+                j2
+            }
+            return shesavali
+        }
+        function firstpath(shesavali) {
+            if (shesavali == "1") {
+                alert("ბავშვების გაფუჭება გინდოდა არა შე ყლეო?")
+                alert("შენ წააგე, ცადე თავიდან.")
+                restart()
+            }
+        }
+        function secondpath(shesavali) {
+            if (shesavali == "2") {
+                return prompt("რას ელოდები ;) \n1.რავი ძმაკაცს და წავალთ მერე ვიყიდით კარტოფილს \n2.რას უნდა ველოდებოდე შეჩემა მოსაწევს :D")
+            }
+        }
+        function secondpath1answer(secondpath) {
+            if (secondpath == "1") {
+                alert("ამას შიგ აქვს, კაი მერე გნახავ")
+                alert("გილოცავ შენ ვერ გაგატყნა პოლიციამ!")
+                restart()
+            }
+        }
+
+        function secondpath2answer(secondpath) {
+            if (secondpath == "2") {
+                alert("მოსაწევი ხომ... \n დაიჭირეთ ეს ყლე!")
+                alert("ვახ კრისა ყოფილხარ შენი დედასშევეცი!")
+                alert("შენ წააგე,პოლიციამ გაგჟიმა ტრაკში... არ ენდო არავის, ცადე თავიდან.")
+                restart()
+            }
+        }
+        function thirdpath(shesavali) {
+            if (shesavali = "3") {
+                return prompt("რაზე და მოსაწევზე... ჩუმად :3 გაქვს ხო? \n1.არ ვიცი არ ვეკარები ეგეთებს. \n2.აა 100 ლარში მოგცემ ჯიგო :3")
+
+            }
+        }
+        function thirdpath1answer(thirdpath) {
+            if (thirdpath == "1") {
+                alert("ჰმმ სტრანია შენთან გამომაგზავნეს არადა :D, კაი ხო მოდი ყლეს მაინც მოგიწოვ :3")
+                alert("გილოცავთ! თქვენ მოგიწოვეს ყლე სამწუხაროდ ბიჭმა მაგრამ მაინც! თქვენ მოიგეთ!")
+                restart()
+            }
+        }
+        function thirdpath2answer(thirdpath) {
+            if (thirdpath == "2") {
+                alert("100 ლარად ხო შე ყლეო... მოტყანით ეს პიდარასტი")
+                alert("სამწუხაროდ თქვენ წააგეთ.. პოლიციამ გაგჟიმათ, ცადეთ თავიდან.")
+                restart()
+            }
+        }
+        function restart() {
+            intro()
+            let shesavali = tutorial()
+            firstpath(shesavali)
+            let secondpatha = secondpath(shesavali)
+            secondpath1answer(secondpatha)
+            secondpath2answer(secondpatha)
+            let thirdpath1a = thirdpath(shesavali)
+            thirdpath1answer(thirdpath1a)
+            thirdpath2answer(thirdpath1a)
+        }
+        function start() {
+            intro()
+            let shesavali = tutorial()
+            firstpath(shesavali)
+            let secondpatha = secondpath(shesavali)
+            secondpath1answer(secondpatha)
+            secondpath2answer(secondpatha)
+            let thirdpath1a = thirdpath(shesavali)
+            thirdpath1answer(thirdpath1a)
+            thirdpath2answer(thirdpath1a)
+            restart()
+        }
+
+
+    </script>
+    <button type="button" onclick="start()"> დააკლიკე რომ იყომარო</button>
+<img src="dealergame.png" alt="ratibati">
+</body>
+
+</html>
