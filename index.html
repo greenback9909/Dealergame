@@ -1,6 +1,34 @@
 <!doctype html>
 <html>
-<a href="bodycountpage.html">BodyCountPage</a>
+<style>
+    .bdc {
+        font-family: arial;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .bdc {
+        background-color:blue;
+        color: red;
+        border: red;
+        height: 36px;
+        width: 150px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+
+    }
+    .bdc:hover {
+            opacity: 0.5;
+        }
+
+        .bdc:active {
+            opacity: 0.3;
+        }
+</style>
+
+<button class="bdc" onclick="window.location.href = 'bodycountpage.html';">Bodycountpage</button>
+
 
 <body bgcolor="#7fb3d5">
     <h1>მოგესალმებით ჩვენს საიტზე!</h1>
@@ -154,10 +182,63 @@
             console.log("არსებული ისტორია მოგონილია და არანაირად არ შეესაბამება რეალობას copium")
         }
     </script>
-    <button type="button" onclick="start()"> dealer სიმულატორი</button>
+    <style>
+        .redbutton {
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 105px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        .redbutton:hover {
+            opacity: 0.5;
+        }
+
+        .redbutton:active {
+            opacity: 0.3;
+        }
+
+        audio {
+            background: color #c71111;
+            color: #970c0c;
+            border: none;
+            height: 50px;
+            width: 300px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .bluebutton {
+            background-color: white;
+            border-color: rgb(41, 118, 211);
+            border-style: solid;
+            border-width: 1px;
+            color: blue;
+            height: 36px;
+            width: 105px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        .bluebutton:hover {
+            background-color: rgb(41, 118, 211);
+            color: white;
+        }
+
+        .bluebutton:active {
+            opacity: 0.4;
+        }
+    </style>
+    <button class="redbutton" onclick="start()"> dealer სიმულატორი</button>
     <img src="dealergame.png" alt="ratibati">
-    <button type="button" onclick="startgame()"> ლექტორის სიმულატორი</button>
+    <button class="bluebutton" onclick="startgame()"> ლექტორის სიმულატორი</button>
 </body>
+
 <audio controls>
     <source src="audioaudio.mp3" type="audio/ogg">
     <source src="audioaudio.mp3" type="audio/mpeg">
