@@ -8,7 +8,7 @@
     }
 
     .bdc {
-        background-color:blue;
+        background-color: blue;
         color: red;
         border: red;
         height: 36px;
@@ -18,17 +18,19 @@
         transition: opacity 0.15s;
 
     }
-    .bdc:hover {
-            opacity: 0.5;
-        }
 
-        .bdc:active {
-            opacity: 0.3;
-        }
+    .bdc:hover {
+        opacity: 0.5;
+    }
+
+    .bdc:active {
+        opacity: 0.3;
+    }
 </style>
 
 <button class="bdc" onclick="window.location.href = 'bodycountpage.html';">Bodycountpage</button>
-
+<button class="redbutton" onclick="start()"> Dealer Simulator</button>
+<button class="bluebutton" onclick="startgame()"> Lecture Simulator</button>
 
 <body bgcolor="#7fb3d5">
     <h1>მოგესალმებით ჩვენს საიტზე!</h1>
@@ -188,7 +190,7 @@
             color: white;
             border: none;
             height: 36px;
-            width: 105px;
+            width: 150px;
             border-radius: 5px;
             cursor: pointer;
             transition: opacity 0.15s;
@@ -210,6 +212,7 @@
             width: 300px;
             border-radius: 5px;
             cursor: pointer;
+            margin-bottom: 50px;
         }
 
         .bluebutton {
@@ -219,7 +222,7 @@
             border-width: 1px;
             color: blue;
             height: 36px;
-            width: 105px;
+            width: 150px;
             border-radius: 5px;
             cursor: pointer;
             transition: opacity 0.15s;
@@ -233,15 +236,39 @@
         .bluebutton:active {
             opacity: 0.4;
         }
+        .carfish{
+            margin-bottom: 50px;
+            font-size: 14;
+            font-family:Arial;
+            background-color:green;
+            color: white;
+            text-align:center;
+            padding-top: 18px;
+            padding-bottom:18px;
+            position:static;
+            
+
+        }
+        .spanexample:hover{
+            
+            cursor:pointer;
+
+        }
+        .spanexample{
+            font:bold;
+            
+        }
+
     </style>
-    <button class="redbutton" onclick="start()"> dealer სიმულატორი</button>
-    <img src="dealergame.png" alt="ratibati">
-    <button class="bluebutton" onclick="startgame()"> ლექტორის სიმულატორი</button>
+
 </body>
 
 <audio controls>
     <source src="audioaudio.mp3" type="audio/ogg">
     <source src="audioaudio.mp3" type="audio/mpeg">
 </audio>
+<div class="carfish">
+    ამ საიტს ასპონსორებს <a class="spanexample" href="https://www.carfish.ge/"> <span class="spanexample">Carfish.ge</span></a>
+</div>
 
 </html>
