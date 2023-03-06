@@ -4,27 +4,87 @@
 <head>
     <title>home page</title>
 </head>
-<script>function infoaboutsex(){
+<script>function infoaboutsexgemini() {
 
-    alert("ერთი 23 წლის იყო მეორე 24 წლის, მე მაშინ 23 ვიყავი")
-}</script>
+        alert("ერთი 23 წლის იყო მეორე 24 წლის, მე მაშინ 23 ვიყავი")
+
+    }
+    function infoaboutsexlibra() {
+        alert("ამ ჰოროსკოპთან ყველაზე მეტად გავერთე, ახალი რაღაცეები აღმოვაჩინე ყველაზე fun სექს მქონდა რაც ოდესმე მქონია,sometimes i miss her.")
+    }
+    function infoaboutsag() {
+        alert("დაყლევებული იყო ორივე რაღაც მხრივ, ერთმა ფული მასესხეო 1 კვირა ვიცნობდი, მეორეს ვაფშე შიგ ქონდა.")
+    }
+    function infoaboutpisces() {
+        alert("პირველი FWB ადამიანი დიდი არაფერი, დიდხანს მქონდა ამასთან 2-3 თვე ვშვებოდით, მერე დამადო დროის ხარჯვად მიმაჩნიაო ლოლ")
+    }
+    function infoaboutaries() {
+        alert("დედამოტყნულის ერთი, ძაან ცუდი ტიპი იყო ძალიან დამაკომპლექსა ძლივს და პირველი იყო, ძლივს დავაქამბექე.")
+    }
+    function noinfo() {
+        alert("ამ ეტაპზე ეს არ მყოლია")
+    }
+</script>
+<style>
+    .homepage {
+        font-family: arial;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .homepage {
+        background-color: blue;
+        color: red;
+        border: red;
+        height: 40px;
+        width: 150px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+    }
+
+    .homepage:hover {
+        opacity: 0.5;
+    }
+
+    .homepage:active {
+        opacity: 0.3;
+    }
+
+    .list {
+        background-color: rgb(200, 0, 0);
+        color:white;
+        border:none ;
+        height: 20px;
+        width: 110px;
+        border-radius: 2px;
+        cursor: pointer;
+
+    }
+    .list:hover{
+        opacity: 0.5;
+    }
+    .list:active {
+        opacity: 0.3;
+    }
+</style>
 
 <body bgcolor="#7fb3d5">
-    <a href="index.html">Home Page</a>
+    <button class="homepage" onclick="window.location.href = 'index.html';">HomePage</button>
     <h1>აქ ნახლდება ინფორმაცია თუ რამდენი სექსი ქონდა Greenback ს და რა ჰოროსკოპთან.</h1>
     <p>ამ ეტაპზე 7.5 bodycount
-        <br>Aries ✅
-        <br>Taurus
-        <br><button type="button" onclick="infoaboutsex()">Gemini✅ ✅</button>
-        <br>Cancer
-        <br> Leo
-        <br> Virgo
-        <br> Libra✅
-        <br>Scorpio
-        <br>Sagittarius✅ ✅
-        <br>Capricorn
-        <br> Aquarius
-        <br> Pisces✅
+        <br><button class="list" onclick="infoaboutaries()">Aries ✅</button>
+        <br><button class="list" onclick="noinfo">Taurus</button>
+        <br><button class="list" onclick="infoaboutsexgemini()">Gemini✅✅</button>
+        <br><button class="list" onclick="noinfo">Cancer</button>
+        <br> <button class="list" onclick="noinfo">Leo</button>
+        <br> <button class="list" onclick="noinfo">Libra</button>
+        <br> <button class="list" onclick="infoaboutsexlibra()">Libra✅</button>
+        <br><button class="list" onclick="noinfo">Scorpio</button>
+        <br> <button class="list" onclick="infoaboutsexsag()">Sagittarius✅✅</button>
+        <br><button class="list" onclick="noinfo">Capricorn</button>
+        <br> <button class="list" onclick="noinfo">Aquarius</button>
+        <br> <button class="list" onclick="infoaboutsexsag()">Pisces✅</button>
 
     </p>
 </body>
