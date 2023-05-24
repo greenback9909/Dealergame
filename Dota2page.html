@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<style>
+    #expander {
+        display: none;
+    }
+
+    .spoiler .expander:before {
+        content: 'show'
+    }
+
+    .spoiler #expand {
+        display: none;
+    }
+
+    .spoiler #expand:checked+.expander:before {
+        content: 'hide';
+    }
+
+    .spoiler #expand:checked~.spoiler-content {
+        display: block;
+    }
+
+    .spoiler .spoiler-content {
+        display: none;
+    }
+
+    .spoiler {
+        font-family: arial;
+        background-color: blue;
+        color: red;
+        border: red;
+        height: 40px;
+        width: 150px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+    }
+</style>
+
+<head>
+    <title>Dota 2 Team</title>
+</head>
+
+<body>
+    <h1>ეს არის ჩვენი დოტას გუნდის გვერდი</h1>
+    <p>ჩვენი მოთამაშეები:
+    </p>
+</body>
+<div class="spoiler">
+    <input type="checkbox" id="expand" name="expand" />
+    <label class="expander" for="expand"></label>
+    <div class="spoiler-content"><img src="http://placekitten.com/220/330" /></div>
+</div>
+
+</html>
