@@ -50,7 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function getNewQuestion() {
         if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
             localStorage.setItem("mostRecentScore", score);
-            return window.location.assign('end.html');
+            var directoryPath = currentPath.substring(0, currentPath.lastIndexOf('/'));
+            var newPath = directoryPath + '/end.html'
+            return window.location.assign(newPath);
         }
         questionCounter++;
         questionCountertext.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
