@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const choicesContainers = document.querySelectorAll(".choice-container");
+    const choiceText = document.querySelectorAll(".choice-text");
     const question = document.getElementById("question");
     const questionCountertext = document.getElementById('questionCounter');
     const scoretext = document.getElementById('score');
@@ -74,9 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function handleClick(event) {
         if (!acceptingAnswers) return;
 
-        const clickedElement = event.target.closest('.choice-container');
+        const clickedElement = event.target.closest('.choice-text');
 
-        if (clickedElement && clickedElement.classList.contains("choice-container")) {
+        if (clickedElement && clickedElement.classList.contains("choice-text")) {
             const selectedAnswer = clickedElement.dataset["number"];
             const classToApply =
                 selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
@@ -97,9 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     button.addEventListener('click', () => {
-        choicesContainers.forEach(choiceContainer => {
-            choiceContainer.classList.remove("correct");
-            choiceContainer.classList.remove("incorrect");
+        choiceText.forEach(choiceText => {
+            choiceText.classList.remove("correct");
+            choiceText.classList.remove("incorrect");
         });
 
         getNewQuestion();
