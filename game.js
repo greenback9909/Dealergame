@@ -50,7 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function getNewQuestion() {
         if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+            console.log("works")
             localStorage.setItem("mostRecentScore", score);
+            var currentPath = window.location.href
             var directoryPath = currentPath.substring(0, currentPath.lastIndexOf('/'));
             var newPath = directoryPath + '/end.html'
             return window.location.assign(newPath);
