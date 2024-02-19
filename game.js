@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             choice1: "2015",
             choice2: "2014",
             choice3: "2013",
-            choice4: "2014",
+            choice4: "2016",
             answer: 2
         },
         {
